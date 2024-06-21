@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1 
+kind: Ingress
+metadata:
+  name: static2-ingress
+  namespace: static2
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    
+spec:
+  tls:
+  - hosts: 
+    - static2.saikrish.xyz
+    secretName: static2.saikrish.xyz-tls
+  rules:
+  - host: static2.saikrish.xyz 
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: static2-svc
+          servicePort: 80

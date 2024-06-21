@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: static2.saikrish.xyz
+  namespace: static2
+spec:
+  secretName: static2.saikrish.xyz-tls
+  issuerRef:
+    name: static2-issuer
+    kind: ClusterIssuer
+  commonName: static2.saikrish.xyz
+  dnsNames:
+  - static2.saikrish.xyz

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: static2-deployment
+  namespace: static2
+spec:
+  selector:
+    matchLabels:
+      app: static2-deployment
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: static2-deployment
+    spec:
+      containers:
+      - name: static2-deployment
+        image: saikrish12345/static2:1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
