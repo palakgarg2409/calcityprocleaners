@@ -1,3 +1,4 @@
+
 (function ($) {
     "use strict";
     
@@ -140,3 +141,20 @@
     
 })(jQuery);
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCkUhf__mk94qVCuKwW3TfTmoBXcSeVYRU",
+  authDomain: "calcityclean-e62d8.firebaseapp.com",
+  projectId: "calcityclean-e62d8",
+  storageBucket: "calcityclean-e62d8.appspot.com",
+  messagingSenderId: "317705140797",
+  appId: "1:317705140797:web:2ca0bb9e97ab3e7281c854"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
