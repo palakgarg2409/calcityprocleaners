@@ -148,13 +148,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCkUhf__mk94qVCuKwW3TfTmoBXcSeVYRU",
-  authDomain: "calcityclean-e62d8.firebaseapp.com",
-  projectId: "calcityclean-e62d8",
-  storageBucket: "calcityclean-e62d8.appspot.com",
-  messagingSenderId: "317705140797",
-  appId: "1:317705140797:web:2ca0bb9e97ab3e7281c854"
+  apiKey: "AIzaSyAUTXjyCckY602NW2JZ_j4tTCuoR7atXYs",
+  authDomain: "calcity-9da55.firebaseapp.com",
+  projectId: "calcity-9da55",
+  storageBucket: "calcity-9da55.appspot.com",
+  messagingSenderId: "180623086904",
+  appId: "1:180623086904:web:4a1fcdd71dc80232ed9dcd"
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
