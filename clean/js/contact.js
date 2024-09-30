@@ -1,3 +1,5 @@
+console.log("contact js loaded");
+
 $(function () {
 
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
@@ -15,7 +17,7 @@ $(function () {
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
+                url: "/sendEmail",
                 type: "POST",
                 data: {
                     name: name,
