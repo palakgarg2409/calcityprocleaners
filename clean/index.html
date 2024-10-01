@@ -520,13 +520,13 @@
     <div class="container-fluid bg-testimonial py-5">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-7 pt-lg-5 pb-5">
+                <div class="col-lg-7">
                     <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Testimonial</h6>
                     <h1 class="section-title text-white mb-5">What Our Clients Say</h1>
-                    <div class="owl-carousel testimonial-carousel position-relative">
+                    <!-- <div class="carousel slide testimonial-carousel position-relative">
                         <div class="d-flex flex-column text-white">
                             <div class="d-flex align-items-center mb-3">
-                                <!--<img class="img-fluid" src="img/testimonial-1.jpg" alt="">-->
+                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
                                 <div class="ml-3">
                                     <h5 class="text-primary">Palak Kaur</h5>
                                     <i>Office Assistant</i>
@@ -556,7 +556,65 @@
 I really like the way you guys cleaned my friend's carpet this week. It looks so clean now. it looks like she bought a new carpet.
 Even smells fresh! She is very happy with you are service!!!</p>
                         </div>
-                    </div>
+                    </div>  -->
+
+
+
+                    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <!-- <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div> -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="d-flex flex-column text-white">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                    <div class="ml-3">
+                                        <h5 class="text-primary">Palak Kaur</h5>
+                                        <i>Office Assistant</i>
+                                    </div>
+                                </div>
+                                <p>very good service...they were very pleasant...they did a better job than the person we have used for years!" "Just wanted you to know that we had another great cleaning this week, as we always do." "Please thank your ladies for me: They are very nice and thorough as well.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="5000">
+                            <div class="d-flex flex-column text-white">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                                    <div class="ml-3">
+                                        <h5 class="text-primary">Tony</h5>
+                                        <i>Businessman</i>
+                                    </div>
+                                </div>
+                                <p>Very professional and courteous, prompt and economical. They did a great job, removed all stains and offered to come back if i was not satisfied. I would recommend Calcity Pro Cleaners for your next job, hands down!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="5000">
+                            <div class="d-flex flex-column text-white">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                    <div class="ml-3">
+                                        <h5 class="text-primary">Mariam Yusuf</h5>
+                                        <i>Teacher</i>
+                                    </div>
+                                </div>
+                                <p>You guys are amazing and I like your service!
+    I really like the way you guys cleaned my friend's carpet this week. It looks so clean now. it looks like she bought a new carpet.
+    Even smells fresh! She is very happy with you are service!!!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button> -->
+                      </div>
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
@@ -726,7 +784,7 @@ Even smells fresh! She is very happy with you are service!!!</p>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
@@ -735,8 +793,8 @@ Even smells fresh! She is very happy with you are service!!!</p>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="js/jqBootstrapValidation.min.js"></script>
+    <script src="js/contact.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

@@ -1,3 +1,21 @@
+//inorder to prevent jumping of elements when child size changes, eg: like in testimonial column
+function setInitialHeightofTestimonial() {
+    const parent = document.getElementsByClassName('bg-testimonial')[0];
+    
+    // Get the initial height based on the first visible slide or the tallest slide
+    const initialHeight = parent.offsetHeight;
+  
+    // Lock the height of the parent to its initial value
+    parent.style.height = `${initialHeight}px`;
+  }
+  
+// Set the initial height when the page loads
+window.onload = setInitialHeightofTestimonial;
+
+// Update the height when the window is resized
+window.onresize = setInitialHeightofTestimonial;
+
+
 
 (function ($) {
     "use strict";
