@@ -2,6 +2,7 @@ const functions = require('firebase-functions');
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const cors = require('cors'); 
 
 // Initialize the Express app
 const app = express();
@@ -9,6 +10,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('../clean'));  // Serve frontend files
 app.use(express.static('../mail'));
+app.use(cors({ origin: true }));
 
 // Main route
 app.get('/', (req, res) => {
