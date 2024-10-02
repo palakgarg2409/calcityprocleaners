@@ -27,15 +27,15 @@ app.post('/sendEmail', (req, res) => {
         port: 587,
         secure: false, // Use TLS
         auth: {
-            user: 'visheshgargbnl@gmail.com',  // Your Gmail address
-            pass: 'ycrf lhls mlrq flja',  // App-specific password
+            user: 'info@calcityprocleaners.com',  // Your Gmail address
+            pass: 'wumj jhxt yisg crns',  // App-specific password
         },
     });
 
     // Email options
     const mailOptions = {
         from: email, // Sender address
-        to: 'visheshgargbnl@gmail.com', // Your email
+        to: 'info@calcityprocleaners.com', // Your email
         subject: `Message from ${name}`, // Subject line
         text: message, // Plain text body
         html: `<p>${message} <br> Contact: ${phone}</p>`, // HTML body
